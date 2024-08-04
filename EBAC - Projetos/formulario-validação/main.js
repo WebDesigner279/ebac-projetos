@@ -41,4 +41,4 @@ nomeBeneficiario.addEventListener('keyup', function(e) {
     nomeBeneficiario.style.borderColor = 'red';
     document.querySelector('.error-message').style.display = 'block';
   }
-});
+});  
