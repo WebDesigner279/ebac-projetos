@@ -77,5 +77,5 @@ button:hover {
   margin-top: -1px;
   margin-bottom: 15px;
   font-size: 12px;
-  display: none;
+  display: none; /* */
 }
