@@ -1,92 +1,81 @@
-/* Estilização do body */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  font-family: Arial, sans-serif; /* Define a fonte padrão como Arial ou sans-serif */
+  background-color: #f4f4f4; /* Define a cor de fundo da página */
+  margin: 0; /* Remove a margem padrão */
+  padding: 0; /* Remove o padding padrão */
+  display: flex; /* Usa flexbox para layout */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+  height: 100vh; /* Define a altura da página como 100% da altura da janela */
 }
 
-/* Estilização do container */
 .container {
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 300px;
-  text-align: center;
+  background-color: #ffffff; /* Define a cor de fundo do contêiner */
+  padding: 20px; /* Adiciona padding interno ao contêiner */
+  border-radius: 8px; /* Arredonda os cantos do contêiner */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra ao redor do contêiner */
+  width: 300px; /* Define a largura do contêiner */
+  text-align: center; /* Centraliza o texto dentro do contêiner */
 }
 
-/* Estilização da tag h1 */
 h1 {
-  color: #333333;
-  margin-bottom: 10px;
+  color: #333333; /* Define a cor do texto do título */
+  margin-bottom: 10px; /* Adiciona margem inferior ao título */
 }
 
-/* Estilização da tag h2 */
 h2 {
-  color: #555555;
-  margin-bottom: 20px;
+  color: #555555; /* Define a cor do texto do subtítulo */
+  margin-bottom: 20px; /* Adiciona margem inferior ao subtítulo */
 }
 
-/* Estilização do formulário */
 form {
-  display: flex;
-  flex-direction: column;
+  display: flex; /* Usa flexbox para layout do formulário */
+  flex-direction: column; /* Alinha os elementos do formulário em uma coluna */
 }
 
-/* Estilização do input textarea */
 input, textarea {
-  margin-bottom: 15px;
-  padding: 10px;
-  border: 1px solid #dddddd;
-  border-radius: 4px;
-  font-size: 16px;
-  resize: none;
+  margin-bottom: 15px; /* Adiciona margem inferior aos inputs e textareas */
+  padding: 10px; /* Adiciona padding interno aos inputs e textareas */
+  border: 1px solid #dddddd; /* Define a borda dos inputs e textareas */
+  border-radius: 4px; /* Arredonda os cantos dos inputs e textareas */
+  font-size: 16px; /* Define o tamanho da fonte dos inputs e textareas */
+  resize: none; /* Remove a capacidade de redimensionar o textarea */
 }
 
-/* Estilização do focus input textarea */
 input:focus, textarea:focus {
-  border-color: #007BFF;
-  outline: none;
+  border-color: #007BFF; /* Muda a cor da borda quando o input ou textarea está em foco */
+  outline: none; /* Remove a linha de contorno padrão ao focar */
 }
 
-/* Estilização do button depositar */
 button {
-  padding: 10px;
-  background-color: #007BFF;
-  color: #ffffff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
+  padding: 10px; /* Adiciona padding interno ao botão */
+  background-color: #007BFF; /* Define a cor de fundo do botão */
+  color: #ffffff; /* Define a cor do texto do botão */
+  border: none; /* Remove a borda do botão */
+  border-radius: 4px; /* Arredonda os cantos do botão */
+  cursor: pointer; /* Muda o cursor para indicar que o botão é clicável */
+  font-size: 16px; /* Define o tamanho da fonte do botão */
 }
 
-/* Estilização de efeito do button depositar */
 button:hover {
-  background-color: #0056b3;
+  background-color: #0056b3; /* Muda a cor de fundo do botão quando o cursor passa sobre ele */
 }
 
-/* Estilização de mensagem de sucesso */
 .success-message {
-  padding: 10px;
-  background-color: #28a745;
-  border-radius: 4px;
-  color: #ffffff;
-  display: none;
+  padding: 10px; /* Adiciona padding interno à mensagem de sucesso */
+  background-color: #28a745; /* Define a cor de fundo da mensagem de sucesso */
+  border-radius: 4px; /* Arredonda os cantos da mensagem de sucesso */
+  color: #ffffff; /* Define a cor do texto da mensagem de sucesso */
+  display: none; /* Esconde a mensagem de sucesso por padrão */
 }
 
-/* Estilização de mensagem de erro */
 .error-message {
-  padding: 10px;
-  background-color: #ff0000;
-  border-radius: 4px;
-  color: #ffffff;
-  margin-top: -1px;
-  margin-bottom: 15px;
-  font-size: 12px;
-  display: none;
+  padding: 10px; /* Adiciona padding interno à mensagem de erro */
+  background-color: #ff0000; /* Define a cor de fundo da mensagem de erro */
+  border-radius: 4px; /* Arredonda os cantos da mensagem de erro */
+  color: #ffffff; /* Define a cor do texto da mensagem de erro */
+  margin-top: -1px; /* Remove a margem superior da mensagem de erro */
+  margin-bottom: 15px; /* Adiciona margem inferior à mensagem de erro */
+  font-size: 12px; /* Define o tamanho da fonte da mensagem de erro */
+  display: none; /* Esconde a mensagem de erro por padrão */
 }
