@@ -1,3 +1,4 @@
+/* Estilização do body */
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
@@ -9,6 +10,7 @@ body {
   height: 100vh;
 }
 
+/* Estilização do container */
 .container {
   background-color: #ffffff;
   padding: 20px;
@@ -18,21 +20,25 @@ body {
   text-align: center;
 }
 
+/* Estilização da tag h1 */
 h1 {
   color: #333333;
   margin-bottom: 10px;
 }
 
+/* Estilização da tag h2 */
 h2 {
   color: #555555;
   margin-bottom: 20px;
 }
 
+/* Estilização do formulário */
 form {
   display: flex;
   flex-direction: column;
 }
 
+/* Estilização do input textarea */
 input, textarea {
   margin-bottom: 15px;
   padding: 10px;
@@ -42,11 +48,13 @@ input, textarea {
   resize: none;
 }
 
+/* Estilização do focus input textarea */
 input:focus, textarea:focus {
   border-color: #007BFF;
   outline: none;
 }
 
+/* Estilização do button depositar */
 button {
   padding: 10px;
   background-color: #007BFF;
@@ -57,10 +65,12 @@ button {
   font-size: 16px;
 }
 
+/* Estilização de efeito do button depositar */
 button:hover {
   background-color: #0056b3;
 }
 
+/* Estilização de mensagem de sucesso */
 .success-message {
   padding: 10px;
   background-color: #28a745;
@@ -69,6 +79,7 @@ button:hover {
   display: none;
 }
 
+/* Estilização de mensagem de erro */
 .error-message {
   padding: 10px;
   background-color: #ff0000;
