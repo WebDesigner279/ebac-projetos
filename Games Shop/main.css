@@ -1,26 +1,25 @@
-/* Reset básico */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-header, section h2 {
-  font-family: "Bungee", sans-serif;
-}
-
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", system-ui;
 }
 
 header {
   padding: 16px 0;
-  background-color: #0044cc;
+  background-color: #0000ff;
   color: #fff;
 }
 
+header, section h2 {
+  font-family: "Bungee", system-ui;
+}
+
 header nav li {
-  display: inline;
+  display: inline-block;
   margin-left: 16px;
   font-size: 24px;
 }
@@ -30,33 +29,15 @@ header nav li a {
   text-decoration: none;
 }
 
-.container {
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
-}
-
-header .container, section .container, footer .container {
+header .container, section .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.container img {
-  height: 300px;
-}
-
-.itens-list img {
-  height: 100px;
-}
-
-.itens-list li {
-  display: inline-block;
-  margin-right: 16px;
-}
-
 section .container {
-  align-items: flex-start;
+  flex-wrap: nowrap; /* Evitar que os elementos quebrem a linha */
+  gap: 16px; /* Espaçamento entre os elementos */
 }
 
 section {
@@ -68,16 +49,36 @@ section h2 {
 }
 
 section p {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 
-.store-front {
-  margin-right: 32px;
+section .itens {
+  display: flex;
+  gap: 16px;
 }
 
-footer {
-  padding: 16px 0;
-  background-color: #0044cc;
-  color: #fff;
-  text-align: center;
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.itens img {
+  height: 150px;
+}
+
+.itens li {
+  display: inline-block;
+  list-style: none;
+}
+
+.loja-img {
+  height: auto;
+  max-height: 400px;
+  width: auto;
+  max-width: 40%; /* Ajuste a largura da imagem para torná-la mais responsiva */
+}
+
+.texto {
+  max-width: 55%; /* Ajuste a largura do texto conforme necessário */
 }
