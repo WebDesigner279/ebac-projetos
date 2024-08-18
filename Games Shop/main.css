@@ -120,11 +120,10 @@ section .container {
   margin-left: 16px;
 }
 
-
 .loja-img::before {
   content: url('https://encurtador.com.br/zYkPK');
- 
 }
+
 
 .texto {
   max-width: 55%;
