@@ -124,15 +124,13 @@ section .container {
   content: url('https://encurtador.com.br/zYkPK');
 }
 
-
-
-
 .texto {
   max-width: 55%;
 }
 
 textarea {
   resize: none;
+  height: 100px;
 }
 
 form input, form textarea, form button {
