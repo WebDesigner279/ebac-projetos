@@ -144,7 +144,7 @@ form input, form textarea, form button {
 
 /* Media Query para telas menores */
 @media (max-width: 768px) {
-.contact-methods, .loja-img, .social-media, .visit-br, .itens, .navbar, .logo, img {
+.contact-methods, .loja-img, .social-media, .visit-br, .itens, .navbar, .nav-links, #navLinks, .logo, img {
     max-width: 100%;
     margin-bottom: 16px;
     margin: auto;
