@@ -9,18 +9,23 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <header>
-    <div class="container">
-      <h1>Games Shop</h1>
-      <nav>
-        <ul>
-          <li><a href="#about">Sobre a loja</a></li>
+      <nav class="navbar">
+        <div class="container">
+          <h1 class="logo">Games Shop</h1>
+        </div>
+        <div class="menu-toggle" id="menuToggle">
+            &#9776; <!-- Ícone de menu hamburguer -->
+        </div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about">Sobre</a></li>
           <li><a href="#contact">Contato</a></li>
         </ul>
-      </nav>
-    </div>
+    </nav>
   </header>
+
   <section id="about">
     <div class="container">
       <img class="loja-img" src="https://encurtador.com.br/zYkPK" alt="Fachada da loja" />
@@ -51,13 +56,9 @@
         <h3>Fale conosco</h3>
         <form action="#" method="POST">
           <input type="text" id="name" name="name" placeholder="Seu nome" required>
-          
           <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
-          
           <input type="tel" id="phone" name="phone" placeholder="Seu telefone (opcional)">
-          
           <textarea id="message" name="message" placeholder="Sua mensagem" required></textarea>
-          
           <button type="submit">Enviar</button>
         </form>
       </div>
@@ -100,5 +101,9 @@
       </p>
     </div>
   </footer>
+
+ <!-- Link de referência para o script -->
+ <script src="script.js"></script>
+
 </body>
 </html>

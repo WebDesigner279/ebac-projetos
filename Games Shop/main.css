@@ -20,7 +20,8 @@ header, section h2, section h3, form button {
 }
 
 header nav li {
-  display: inline-block;
+  /*display: inline-block;*/
+  display: flex;
   margin-left: 16px;
   font-size: 18px;
 }
@@ -28,6 +29,7 @@ header nav li {
 header nav li a {
   color: #fff;
   text-decoration: none;
+  
 }
 
 header .container, section .container {
@@ -99,7 +101,7 @@ section .container {
 }
 
 .container h1, nav {
-  margin:16px;
+  margin: 8px;
   font-size: 24px;
 }
 
@@ -142,7 +144,7 @@ form input, form textarea, form button {
 
 /* Media Query para telas menores */
 @media (max-width: 768px) {
-.contact-methods, .loja-img, .social-media, .visit-br, .itens, img {
+.contact-methods, .loja-img, .social-media, .visit-br, .itens, .navbar, .logo, img {
     max-width: 100%;
     margin-bottom: 16px;
     margin: auto;
@@ -162,7 +164,6 @@ form input, form textarea, form button {
   .container h3, h2, p, ul{
     text-align: center;
   }
-
 }
 
 /* Botão padrão */
@@ -189,3 +190,58 @@ footer {
   padding: 16px 0;
   text-align: center;
 }
+
+/* Teste */
+.navbar, .nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+#navLinks {
+  padding-right: 10%;
+  align-items: center;
+}
+
+.menu-toggle {
+  padding-right: 24px;
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.logo {
+  padding-left: 150px;
+}
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px; /* Altura da navbar */
+      left: 0;
+      background-color: #0000ff;
+      width: 100%;
+  }
+
+  .nav-links.active {
+      display: flex;
+  }
+
+  .nav-links li {
+      margin: 0;
+      padding: 10px;
+      text-align: center;
+  }
+
+  .menu-toggle {
+      display: block;
+  }
+
+  .logo {
+    padding-left: 135px;
+  }
+}
+
