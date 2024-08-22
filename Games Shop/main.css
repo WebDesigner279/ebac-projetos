@@ -210,9 +210,7 @@ footer {
   cursor: pointer;
 }
 
-.logo {
-  padding-left: 60px;
-}
+
 /* Estilos responsivos */
 @media (max-width: 768px) {
   .nav-links {
