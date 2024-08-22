@@ -14,7 +14,7 @@ header {
   color: #fff;
 }
 
-header, section h2, section h3, form button {
+.nav-links, .menu-toggle, header, section h2, section h3, h1, form button {
   font-family: "Bungee", system-ui;
   font-weight: normal;
 }
@@ -245,6 +245,8 @@ footer {
 
   .logo {
     padding-left: 115px;
+  
+
   }
 }
 
