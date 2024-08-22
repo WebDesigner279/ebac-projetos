@@ -166,9 +166,6 @@ form input, form textarea, form button {
     text-align: center;
   }
 
-  .nav-links {
-    padding-right: 100%;
-  }
 }
 
 /* Botão padrão */
@@ -244,11 +241,11 @@ footer {
   }
 
   .logo {
-    padding-left: 100px;
+    padding-left: 150px;
   }
 }
 
 .nav-links {
-  padding-right: 80px;
+  padding-right: 10px;
 }
 
