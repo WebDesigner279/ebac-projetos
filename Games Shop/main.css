@@ -38,6 +38,7 @@ header .container, section .container {
   justify-content: space-between;
 }
 
+
 section .container {
   flex-wrap: nowrap;
   gap: 16px;
@@ -198,7 +199,6 @@ footer {
   text-align: center;
 }
 
-/* Teste */
 .navbar, .nav-links {
   display: flex;
   justify-content: space-between;
@@ -214,11 +214,6 @@ footer {
   font-size: 24px;
   cursor: pointer;
 
-  box-shadow: none;
-  background-color: transparent;
-  
-
-  
 }
 
 
@@ -236,7 +231,6 @@ footer {
 
   .nav-links.active {
       display: flex;
-      
   }
 
   .nav-links li {
@@ -247,19 +241,15 @@ footer {
 
   .menu-toggle {
       display: block;
-      color: #fff;
   }
 
   /* teste */
 
-
-
-
 /* fim teste */
 
-  .logo {
-    padding-left: 115px;
-  
+.logo {
+    padding-left: 140px;
+
   }
 }
 
