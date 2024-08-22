@@ -246,16 +246,26 @@ footer {
       display: block;
       color: #fff;
       box-shadow: none;
+
+      background-color: transparent;
   }
+
+  /* teste */
+
+
+
+
+/* fim teste */
 
   .logo {
     padding-left: 115px;
   
-
   }
 }
 
 .nav-links {
   padding-right: 10px;
 }
+
+
 
