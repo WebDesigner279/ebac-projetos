@@ -148,6 +148,7 @@ form input, form textarea, form button {
     max-width: 100%;
     margin-bottom: 16px;
     margin: auto;
+    padding: auto;
   }
 
   .texto {
@@ -201,7 +202,7 @@ footer {
 
 #navLinks {
   padding-right: 7%;
-  align-items: center;
+  
 }
 
 .menu-toggle {
@@ -212,7 +213,7 @@ footer {
 }
 
 .logo {
-  padding-left: 5%;
+  padding-left: 60px;
 }
 /* Estilos responsivos */
 @media (max-width: 768px) {
@@ -241,7 +242,7 @@ footer {
   }
 
   .logo {
-    padding-left: 135px;
+    padding-left: 130px;
   }
 }
 
