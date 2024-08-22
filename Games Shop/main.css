@@ -214,9 +214,7 @@ footer {
   font-size: 24px;
   cursor: pointer;
 
-  border: none;
-  outline: none;
-  color: white;
+  
 }
 
 
@@ -245,6 +243,9 @@ footer {
 
   .menu-toggle {
       display: block;
+
+      color: #fff;
+      border: none;
   }
 
   .logo {
