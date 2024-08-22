@@ -198,11 +198,12 @@ footer {
   justify-content: space-between;
   align-items: center;
   position: relative;
+  margin: auto;
+  padding: auto;
 }
 
 #navLinks {
-  padding-right: 7%;
-  
+  padding-right: 5%;
 }
 
 .menu-toggle {
