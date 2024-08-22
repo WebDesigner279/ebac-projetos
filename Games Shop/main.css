@@ -213,6 +213,9 @@ footer {
   display: none;
   font-size: 24px;
   cursor: pointer;
+
+  box-shadow: none;
+  background-color: transparent;
   
 
   
@@ -245,9 +248,6 @@ footer {
   .menu-toggle {
       display: block;
       color: #fff;
-      box-shadow: none;
-
-      background-color: transparent;
   }
 
   /* teste */
