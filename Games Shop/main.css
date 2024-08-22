@@ -144,7 +144,7 @@ form input, form textarea, form button {
 
 /* Media Query para telas menores */
 @media (max-width: 768px) {
-.contact-methods, .loja-img, .social-media, .visit-br, .itens, .navbar, .nav-links, #navLinks, .logo, img {
+.contact-methods, .loja-img, .social-media, .visit-br, .itens, .navbar, .nav-links, .logo, img {
     max-width: 100%;
     margin-bottom: 16px;
     margin: auto;
@@ -202,15 +202,6 @@ footer {
   padding: auto;
 }
 
-#navLinks {
-  padding-right: 5%;
-  
-}
-
-.logo {
- padding-right: 20px;
-}
-
 .menu-toggle {
   padding-right: 24px;
   display: none;
@@ -235,11 +226,12 @@ footer {
 
   .nav-links.active {
       display: flex;
+      
   }
 
   .nav-links li {
       margin: 0;
-      padding: 10px;
+      padding: 8px;
       text-align: center;
   }
 
@@ -248,7 +240,11 @@ footer {
   }
 
   .logo {
-    padding-left: 130px;
+    padding-left: 100px;
   }
+}
+
+.nav-links {
+  padding-right: 80px;
 }
 
