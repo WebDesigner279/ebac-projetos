@@ -213,6 +213,10 @@ footer {
   display: none;
   font-size: 24px;
   cursor: pointer;
+
+  border: none;
+  outline: none;
+  color: white;
 }
 
 
