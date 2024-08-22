@@ -156,6 +156,11 @@ form input, form textarea, form button {
     margin: 16px;
   }
 
+  .visit-br p {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
   .contact-methods {
     display: flex;
     text-align: center;
