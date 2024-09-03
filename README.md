@@ -1,2 +1,2 @@
-1. Atualizei o nome da branch default ebac-projetos para branch default main
+Projetos de Estudos do Curso Engenheiro: Front-End Escola: EBAC
 
