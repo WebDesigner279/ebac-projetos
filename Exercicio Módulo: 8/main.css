@@ -1,5 +1,26 @@
+body {
+  font-family: Arial, sans-serif; /* Define a fonte padrão como Arial ou sans-serif */
+  background-color: #f4f4f4; /* Define a cor de fundo da página */
+  margin: 0; /* Remove a margem padrão */
+  padding: 0; /* Remove o padding padrão */
+  display: flex; /* Usa flexbox para layout */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+  height: 100vh; /* Define a altura da página como 100% da altura da janela */
+
+}
+
+.container {
+  background-color: #ffffff; /* Define a cor de fundo do contêiner */
+  padding: 20px; /* Adiciona padding interno ao contêiner */
+  border-radius: 8px; /* Arredonda os cantos do contêiner */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra ao redor do contêiner */
+  width: 590px; /* Define a largura do contêiner */
+  text-align: center; /* Centraliza o texto dentro do contêiner */
+}
+
 table {
-  width: 50%;
+  width: 100%;
   border-collapse: collapse;
 }
 table, th, td {
@@ -14,4 +35,18 @@ th {
 }
 form {
   margin-bottom: 20px;
+}
+
+button {
+  padding: 10px; /* Adiciona padding interno ao botão */
+  background-color: #007BFF; /* Define a cor de fundo do botão */
+  color: #ffffff; /* Define a cor do texto do botão */
+  border: none; /* Remove a borda do botão */
+  border-radius: 4px; /* Arredonda os cantos do botão */
+  cursor: pointer; /* Muda o cursor para indicar que o botão é clicável */
+  font-size: 16px; /* Define o tamanho da fonte do botão */
+}
+
+button:hover {
+  background-color: #0056b3; /* Muda a cor de fundo do botão quando o cursor passa sobre ele */
 }
