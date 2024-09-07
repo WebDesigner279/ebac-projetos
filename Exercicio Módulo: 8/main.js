@@ -2,8 +2,8 @@ document.getElementById('contactForm').addEventListener('submit', function(event
   event.preventDefault();
 
   // Captura os valores dos inputs
-  var name = document.getElementById('name').value;
-  var phone = document.getElementById('phone').value;
+  var name = document.getElementById('inp-name').value;
+  var phone = document.getElementById('inp-phone').value;
 
   // Cria uma nova linha e células
   var table = document.getElementById('contactTable').getElementsByTagName('tbody')[0];
