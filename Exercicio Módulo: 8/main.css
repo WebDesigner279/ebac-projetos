@@ -23,12 +23,12 @@ body {
 }
 
 #inp-name {
-  margin-right: 70px;
+  margin-right: 16px;
   
 }
 
 #inp-phone {
-  margin-right: 8px;
+ 
   
 }
 
@@ -62,7 +62,7 @@ button {
   border-radius: 4px; /* Arredonda os cantos do botão */
   cursor: pointer; /* Muda o cursor para indicar que o botão é clicável */
   font-size: 16px; /* Define o tamanho da fonte do botão */
-  margin-left: 23px; /* Define margem a direita do botão */
+  margin-left: 85px; /* Define margem a direita do botão */
 }
 
 button:hover {
