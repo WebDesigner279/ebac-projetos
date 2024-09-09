@@ -18,4 +18,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
 
   // Limpa o formulário após adicionar o contato
   document.getElementById('contactForm').reset();
+
+
+  
 });
