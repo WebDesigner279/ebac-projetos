@@ -200,6 +200,17 @@ form input, form textarea, form button {
     text-align: center;
   }
 
+  .addade-img {
+    margin: auto;
+    padding: auto;
+  }
+
+  .nav-links {
+    padding-right: 30%;
+    padding-left: 30%;
+  
+  }
+
 }
 
 /* Botão padrão */
@@ -271,19 +282,13 @@ footer {
       display: block;
   }
 
-  /* teste */
 
-/* fim teste */
 
 .logo {
-    /*padding-left: 115px;*/
-    align-items: center;
-
+    padding-left: 115px;
   }
 }
 
-.nav-links {
-  padding-right: 10px;
-}
+
 
 
