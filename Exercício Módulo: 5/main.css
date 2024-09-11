@@ -266,6 +266,7 @@ footer {
       left: 0;
       background-color: #0000ff;
       width: 100%;
+      margin-top: -1px;
   }
 
   .nav-links.active {
