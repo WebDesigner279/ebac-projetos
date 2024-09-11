@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notíca Urgente</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+ 
+</head>
+
+<body>
+  <header>
+      <nav class="navbar">
+        <div class="container">
+          <h1 class="logo">Notíca Urgente</h1>
+        </div>
+        <div class="menu-toggle" id="menuToggle">
+            &#9776; <!-- Ícone de menu hamburguer -->
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about">Notícias</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      
+      <img class="addade-img" src="./imagens/addade.png" alt="Fachada da loja" />
+   
+      
+      <div class="texto">
+        <h2>Notícias Urgentes</h2>
+        <p>
+          <strong>Haddad diz que Brasil quer aderir regra internacional que deve taxar big techs</strong> 
+        </p>
+        <p>
+          Proposta é dividida em dois pilares: realocação direta de lucros das atividades operacionais e ‘tributação mínima’
+        </p>
+
+        <p>
+          Fonte: <a href="https://www.r7.com/">r7.com</a>
+        </p>
+      
+        <ul class="itens">
+          <a href="https://noticias.r7.com/brasilia/analise-do-projeto-de-anistia-para-envolvidos-no-8-de-janeiro-e-adiada-para-depois-das-eleicoes-11092024/">
+          <li><img src="./imagens/anistia.png" alt="Projeto Anistia" /></li>
+        </a>
+        
+        <a href="https://noticias.r7.com/cidades/foto-mostra-marido-de-deputada-de-roraima-preso-em-operacao-da-pf-com-dinheiro-na-cueca-11092024/">
+          <li><img src="./imagens/apreenção-pf.png" alt="Apreenção PF" /></li>
+        </a>
+
+        <a href="https://noticias.r7.com/cidades/apos-audiencia-de-custodia-deolane-bezerra-vai-continuar-na-cadeia-em-pernambuco-11092024/">
+          <li><img src="./imagens/deolane.png" alt="Deolane" /></li> 
+        </a>
+        </ul>
+      </div>
+      
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      
+
+      <div class="contact-methods">
+        <h2 class="contact">Inscreva-se</h2>
+        <h3>Para receber notícias urgentes</h3>
+        <form action="#" method="POST">
+          <input type="text" id="name" name="name" placeholder="Seu nome" required>
+          <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+          <input type="tel" id="phone" name="phone" placeholder="Seu telefone (opcional)">
+          <textarea id="message" name="message" placeholder="Sua mensagem" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+
+      <div class="social-media">
+        <h3>Nos acompanhe</h3>
+        <ul class="social-links">
+          <li>
+            <a href="#" title="Siga-nos no Instagram">
+              <img src="./imagens/instagram.png" alt="Logo do Instagram">
+            </a>
+          </li>
+
+          <li>
+            <a href="#" title="Siga-nos no Facebook">
+              <img src="./imagens/facebook.png" alt="Logo do Facebook">
+            </a>
+          </li>
+
+          <li>
+            <a href="#" title="Visite nosso canal no Youtube">
+              <img src="./imagens/youtube.png" alt="Logo do Youtube">
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="visit-br">
+        <h3>Venha até nós</h3>    
+        <p>Rua: Endereço, Bairro, Cidade.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>
+        &copy; Notíca Urgente - Todos os direitos reservados - 2024
+      </p>
+    </div>
+  </footer>
+
+ <!-- Link de referência para o script -->
+ <script src="script.js"></script>
+
+</body>
+</html>
