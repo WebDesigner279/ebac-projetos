@@ -1,4 +1,9 @@
 // Função para validar e processar o formulário
+function processarFormulario(event) {
+  // Previne o envio padrão do formulário
+  event.preventDefault();
+}
+
 function mostrarResultado() {
   // Obtém os valores dos inputs
   const nome = document.getElementById("nome").value;
