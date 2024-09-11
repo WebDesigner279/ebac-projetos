@@ -276,7 +276,8 @@ footer {
 /* fim teste */
 
 .logo {
-    padding-left: 115px;
+    /*padding-left: 115px;*/
+    align-items: center;
 
   }
 }
