@@ -12,7 +12,7 @@
     <h1>Formulário de Cadastro</h1>
 
     <form id="formCadastro" onsubmit="processarFormulario(event)">
-    
+   
     <label for="nome">Nome:</label>
     <input type="text" id="nome" placeholder="Digite seu nome"><br>
     
@@ -22,9 +22,10 @@
     <label for="senha">Senha:</label>
     <input type="password" id="senha" placeholder="Digite sua senha"><br>
     
-    <button onclick="mostrarResultado()">Cadastrar</button>
+    <button type="submit" onclick="mostrarResultado()">Cadastrar</button>
 
   </form>
+ 
     
     <div class="resultado" id="resultado"></div>
   </div>
