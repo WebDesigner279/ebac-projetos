@@ -255,7 +255,6 @@ footer {
 
 }
 
-
 /* Estilos responsivos */
 @media (max-width: 768px) {
   .nav-links {
@@ -282,8 +281,6 @@ footer {
   .menu-toggle {
       display: block;
   }
-
-
 
 .logo {
     padding-left: 115px;
