@@ -103,7 +103,6 @@ ul li:hover .overlay-imagem-link {
     .overlay-imagem-link {
         margin-bottom: 4px;
     }
-
 }
 
 @media (max-width: 768px) {
@@ -139,5 +138,3 @@ ul li:hover .overlay-imagem-link {
         padding: 8px;
     }
 }
-
-
