@@ -7,17 +7,18 @@
 
 header {
     background-color: #5f27cd;
-    padding:  16px 0;
+    padding: 16px 0;
     color: #fff;
     display: flex;
+    flex-direction: column; /* Alinhamento vertical para telas menores */
+    align-items: center;
     border-bottom: 16px solid #341f97;
-    justify-content: center;
     text-transform: uppercase;
     font-style: italic;
 }
 
 header button {
-    margin-left: 16px;
+    margin-top: 16px;
 }
 
 form {
@@ -33,6 +34,9 @@ form h2 {
 
 input, button {
     padding: 8px;
+    width: 100%; /* Ajusta os inputs e botões para telas menores */
+    max-width: 300px;
+    margin-bottom: 8px;
 }
 
 button {
@@ -51,6 +55,8 @@ button {
 ul {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    padding: 16px; /* Para espaçamento nas laterais */
 }
 
 ul li {
@@ -59,6 +65,7 @@ ul li {
     list-style: none;
     position: relative;
     overflow-y: hidden;
+    margin: 8px; /* Espaçamento entre as imagens */
 }
 
 ul li img {
@@ -83,4 +90,49 @@ ul li img {
 
 ul li:hover .overlay-imagem-link {
     opacity: 1;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 1024px) {
+    ul li {
+        max-width: 33%; /* Exibe 3 imagens por linha */
+    }
+
+    .overlay-imagem-link {
+        margin-bottom: 4px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    ul li {
+        max-width: 50%; /* Exibe 2 imagens por linha */
+    }
+
+    header button {
+        margin-left: 0;
+        margin-top: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    ul li {
+        max-width: 100%; /* Exibe 1 imagem por linha em telas muito pequenas */
+    }
+    
+    form {
+        padding: 16px 8px;
+    }
+    
+    input, button {
+        width: 100%;
+        max-width: 100%; /* Botões e inputs ocupam toda a largura disponível */
+    }
+
+    ul {
+        padding: 8px;
+    }
 }
