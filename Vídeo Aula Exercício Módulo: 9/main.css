@@ -33,8 +33,6 @@ form h2 {
 }
 
 input, button {
-    margin-left: 4px;
-    margin-right: 4px;
     padding: 8px;
     width: 100%; /* Ajusta os inputs e botões para telas menores */
     max-width: 200px;
@@ -98,11 +96,7 @@ ul li:hover .overlay-imagem-link {
 @media (max-width: 1024px) {
     ul li {
         max-width: 33%; /* Exibe 3 imagens por linha */
-    }
-
-    .overlay-imagem-link {
-        margin-bottom: 4px;
-    }
+    }  
 }
 
 @media (max-width: 768px) {
