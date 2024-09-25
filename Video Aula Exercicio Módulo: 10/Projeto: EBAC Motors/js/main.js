@@ -20,6 +20,12 @@ $(document).ready(function(){
           },
           telefone: {
               required: true
+          },
+          mensagem: {
+            required: true,
+          },
+          veiculoDeInteresse: {
+            required: false
           }
       },
       messages: {
@@ -28,15 +34,15 @@ $(document).ready(function(){
       submitHandler: function(form) {
           console.log(form)
       },
-      submitHandler: function(form) {
-        console.log(form)
+      invalidHandler: function(evento, validador) {
+
+        let camposIncorretos = validador.numberOfInvalids();
+        if (camposIncorretos) {
+            alert(`Existem ${camposIncorretos} campos incorretos`)
+        }
       }
   })
 })
-
-
-  //$('#telefone').mask('(00) 00000-0000', {
-      //placeholder: 'Digite seu número de celular'
 
     
  
