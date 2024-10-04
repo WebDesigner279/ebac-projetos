@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body > header {
+  background-color: #2f3640;
+  padding: 16px 0;
+  color: #ffff;
+}
+
+
+
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header li {
+  display: inline;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-left: 16px;
+}
+
+header li a {
+  color: #ffff;
+  text-decoration: none;
+}
+
+.container {
+  width: 1366px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.container .text {
+  margin-bottom: 16%;
+  margin-left: 20px; /* Espaçamento entre a imagem e o texto */
+  max-width: 60%; /* O texto ocupará o restante do espaço */
+}
+
+/* Sessão Conteúdos */
+
+
+/* Fim Sessão Conteúdos */
+
+
+
+section {
+  padding: 32px 0;
+}
+
+section h2 {
+  margin-bottom: 16px;
+}
+
+p, header, a {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/*Estilo Footer*/
+footer {
+  background-color: #2f3640;
+  color: #fff;
+  padding: 16px 0;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
