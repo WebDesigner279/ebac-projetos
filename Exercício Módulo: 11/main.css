@@ -64,20 +64,27 @@ body {
   margin-left: 10%;
   margin-right: 10%;
   border-bottom: 0.5px solid #0078ff;
+  transform: scaleY(0.5);
 }
 
 .hrSobre {
-  max-width: 95%;
-  margin-bottom: 32px;
+  margin-bottom: 5%;
+  margin-right: 5%;
   border-bottom: 0.5px solid #0078ff;
+  transform: scaleY(0.5);
 }
 
-.sobre, .text {
-  max-width: 95%;
+#imgLoja {
+  margin-top: -8%;
+}
+
+.sobre  {
+  
+  margin-right: 5%;
 }
 
 .text {
-margin-top: 64px;
+margin-top: 40px;
 }
 
 h2 {
@@ -146,12 +153,12 @@ section h2 {
   margin-right: 5em;
   margin-left: -4em;
   text-decoration: none;   
-
+  font-weight: bold;
 }
 
 .navbar a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: #fff;
+  color: #0078ff;
 }
 
 /*Estilo Footer*/
@@ -161,4 +168,117 @@ footer {
   padding: 16px 0;
   text-align: center;
   margin-top: 64px;
+}
+
+/* RESPONSIVIDADE */
+
+/* Para dispositivos móveis (largura máxima de 640px) */
+@media only screen and (max-width: 640px) {
+  
+  header .container {
+    flex-direction: column;
+    text-align: center;
+}
+
+  /* Navbar geral */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  margin-right: 1em; /* Reduzindo o espaçamento */
+  margin-left: 1em;  /* Removendo margem negativa */
+  text-decoration: none;   
+  font-weight: bold;
+}
+
+  .container {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .card-container {
+    margin-left: 0;
+    margin-right: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .text {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+/* Para tablets (largura máxima de 1024px) */
+@media only screen and (max-width: 1024px) {
+
+  header .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* Navbar geral */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  margin-right: 1em; /* Reduzindo o espaçamento */
+  margin-left: 1em;  /* Removendo margem negativa */
+  text-decoration: none;   
+  font-weight: bold;
+}
+
+  .container {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .card-container {
+    margin-left: 0;
+    margin-right: 0;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+
+  #sobre .text {
+    max-width: 100%;
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+
+
+  #imgLoja {
+    margin-top: 4%;
+  }
+  
+  .text {
+  margin-top: 80px;
+  }
+
+  #produtos {
+    margin-top: -40px;
+  }
 }
