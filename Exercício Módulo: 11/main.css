@@ -5,13 +5,10 @@
 }
 
 body > header {
-  background-color: #2f3640;
+  background-color: #0078ff;
   padding: 16px 0;
   color: #ffff;
 }
-
-
-
 
 header .container {
   display: flex;
@@ -19,9 +16,8 @@ header .container {
   justify-content: space-between;
 }
 
-header li {
+header li  {
   display: inline;
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   margin-left: 16px;
 }
@@ -33,9 +29,14 @@ header li a {
 
 .container {
   width: 1366px;
-  margin: 0 auto;
+  margin-left: 10%;
+  margin-right: 10%;
   display: flex;
   align-items: center;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .container .text {
@@ -45,11 +46,88 @@ header li a {
 }
 
 /* Sessão Conteúdos */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
 
+.text-conteudo h2 {
+  margin-left: 10%;
+  margin-right: 10%;
+}
 
+.hrConteudo {
+  margin-left: 10%;
+  margin-right: 10%;
+  border-bottom: 0.5px solid #0078ff;
+}
+
+.hrSobre {
+  max-width: 95%;
+  margin-bottom: 32px;
+  border-bottom: 0.5px solid #0078ff;
+}
+
+.sobre, .text {
+  max-width: 95%;
+}
+
+.text {
+margin-top: 64px;
+}
+
+h2 {
+  color: #0078ff;
+}
+
+button {
+  width: 300px;
+  height: 40px;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  background-color: #0078ff;
+  cursor: pointer;
+  
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 16px;
+}
+
+.card-title {
+  margin: 0 0 10px;
+  font-size: 1.2em;
+}
+
+.card-text {
+  margin: 0;
+  color: #555;
+}
 /* Fim Sessão Conteúdos */
-
-
 
 section {
   padding: 32px 0;
@@ -59,17 +137,16 @@ section h2 {
   margin-bottom: 16px;
 }
 
-p, header, a {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 .navbar a {
   float: left;
   display: block;
   color: white;
   text-align: center;
   padding: 14px 20px;
-  text-decoration: none;
+  margin-right: 5em;
+  margin-left: -4em;
+  text-decoration: none;   
+
 }
 
 .navbar a:hover {
@@ -79,10 +156,9 @@ p, header, a {
 
 /*Estilo Footer*/
 footer {
-  margin-top: 20%;
-  background-color: #2f3640;
+  background-color: #0078ff;
   color: #fff;
   padding: 16px 0;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 64px;
 }
