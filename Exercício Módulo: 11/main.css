@@ -28,7 +28,7 @@ header li a {
 }
 
 .container {
-  width: 1366px;
+ width: 1366px;
   margin-left: 10%;
   margin-right: 10%;
   display: flex;
@@ -272,7 +272,9 @@ footer {
 
 
   #imgLoja {
-    margin-top: 4%;
+    width: 85%;
+    margin-top: -3%;
+    
   }
   
   .text {
