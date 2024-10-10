@@ -1,0 +1,15 @@
+.container {
+  margin-top: 40px;
+}
+
+button {
+  margin-top: 16px;
+}
+
+.form-check, .form-switch {
+  margin-top: 18px;
+}
+
+.form-label {
+  margin-top: 8px;
+}
