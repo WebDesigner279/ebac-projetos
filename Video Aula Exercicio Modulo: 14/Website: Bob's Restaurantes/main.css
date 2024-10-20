@@ -3,20 +3,16 @@ body {
 }
 
 .navbar {
-  background-color: #e15f41;
+  background-color: #c44e34;
 }
 
-.nav .nav-link.active {
+#cabecalho .nav .nav-link.active {
   background-color: #fff;
-  color: #e15f41;
+  color: #c44e34; /* cor um pouco mais escura */
 }
 
-.nav .nav-link, .navbar-brand, .navbar-brand:hover {
+#cabecalho .nav .nav-link, .navbar-brand, .navbar-brand:hover, .nav-cardapio .nav-link.active:hover {
   color: #fff;
-}
-
-.navbar-brand {
-  font-family: Pacifico, cursive;
 }
 
 .navbar-toggler {
@@ -30,6 +26,46 @@ ul {
 .navbar-toggler:focus {
   outline: none;
   box-shadow: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.section-title {
+  font-family: Pacifico, cursive;
+}
+
+#sobre-o-restaurante {
+  background-color: #c44e342a;
+}
+
+.text-colored {
+  color: #c44e34;
+}
+
+.nav-cardapio .nav-link.active {
+  margin-top: 16px;
+  background-color: #c44e34;
+  color: #fff;
+}
+
+.nav-cardapio .nav-link:hover {
+  color: #c44e34;
+}
+
+.coke, .sucos, h5, p {
+  border-radius: 8px;
+  margin-top: 16px;
+}
+
+#text-bebidas {
+  margin-top: 8px;
+}
+
+.btn {
+  margin-right: 8px;
 }
 
 

@@ -1,3 +1,4 @@
+style.css 
 Ajustes adicionais aplicados:
 .navbar-toggler:focus {
   outline: none;

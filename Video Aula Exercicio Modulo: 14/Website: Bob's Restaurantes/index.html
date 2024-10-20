@@ -13,39 +13,243 @@
   </head>
   <body>
     <!--Início Navbar-->
-    <header class="navbar navbar-expand-lg sticky-top p-4">
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
       <div class="container">
-        <h1 class="navbar-brand m-0">Bob's Restaurantes</h1>
+        <h1 class="navbar-brand m-0 section-title">Bob's Restaurantes</h1>
         <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
           <span class="navbar-toggler-icon"></span>
         </button>
         <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
           <ul class="nav nav-pills d-block d-md-flex">
             <li class="nav-item fw-bold">
-              <a href="#" class="nav-link active">
-                <i class="bi bi-house-door me-1"></i>Sobre o restaurante</a>
+              <a href="#sobre-o-restaurante" class="nav-link">
+                <i class="bi bi-house-door me-2"></i>Sobre o restaurante</a>
             </li>
-
             <li class="nav-item fw-bold">
-              <a href="#" class="nav-link">
-                <i class="bi bi-calendar-check me-1"></i>Eventos
+              <a href="#eventos" class="nav-link">
+                <i class="bi bi-calendar-check me-2"></i>Eventos
               </a>
             </li>
-
             <li class="nav-item fw-bold">
-              <a href="#" class="nav-link"><i class="bi bi-card-text me-1"></i>Nosso cardápio</a>
+              <a href="#" class="nav-link"><i class="bi bi-card-text me-2"></i>Nosso cardápio</a>
             </li>
-
             <li class="nav-item fw-bold">
-              <a href="#" class="nav-link"><i class="bi bi-chat-left-text me-1"></i>Fale concosco</a>
+              <a href="#" class="nav-link"><i class="bi bi-chat-left-text me-2"></i>Fale concosco</a>
             </li>
           </ul>
         </nav>
       </div>
+    </header>
     <!--Fim Navbar-->
 
+    <div data-bs-spy="scroll" data-bs-target="cabecalho">
+      <!--Sessão Sobre o Restaurante-->
+        <section id="sobre-o-restaurante">
+          <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+            
+            <!--Indicadores dos Sliders-->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
 
-    </header>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="3000">
+                <img src="./lib/imagens/espaco-loja.png" alt="Espaço da Loja">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Nosso Espaço</h5>
+                  <p>Venha conhecer nosso restaurante!</p>
+                </div>
+              </div>
+
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="./lib/imagens/nosso-cardapio.png" alt="Nosso Cardápio Loja">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Como Preparamos o Nosso Cardápio</h5>
+                  <p>Venha conhecer nosso restaurante!</p>
+                </div>
+              </div>
+
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="./lib/imagens/cardapio.png" alt="Cardápio da Loja">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Nosso Cardápio é Exclusivo</h5>
+                  <p>Venha conhecer nosso restaurante!</p>
+                </div>
+              </div>
+            </div>
+
+            <!--Controles Prev e Next-->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <div class="pt-5 pb-5">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-5 pt-2">
+                  <img src="./lib/imagens/espaco-loja.png" class="d-block w-100 rounded mb-3" alt="Espaço da Loja">
+                </div>
+                <div class="col-md-7 pt-2">
+                  <h2 class="section-title">Sobre <span class="text-colored">o Restaurante</span></h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quas, obcaecati placeat eligendi animi dicta similique sint debitis! Soluta distinctio laudantium exercitationem aut nemo. Commodi dolore enim perferendis natus ratione?
+                  </p>
+                  <h3 class="section-title">Sobre <span class="text-colored">o Espaço</span></h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta quo modi quam enim eaque, suscipit officia repudiandae ipsam alias consequatur harum aliquam vero tempore architecto ipsa minima quod iure ea?
+                  </p>
+
+                  <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+      <!--Sessão Sobre Eventos-->
+      <section id="eventos" class="pt-3 pb-3">
+        <div class="container">
+          <div class="row mt-4">
+            <h2 class="section-title text-center">Para todas <span class="text-colored">as ocasiões</span></h2>
+          </div>
+
+          <div class="row mt-2">
+            <div class="col-md-4">
+              <img src="./lib/imagens/aniversarios.png" alt="Aniversários" class="d-block w-100 rounded mb-2">
+              <h3 class="section-title text-colored fs-4 pt-3">
+                <i class="bi bi-calendar-heart-fill"></i>
+                Aniversários</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, animi aspernatur modi dicta quo tempora eveniet voluptatem impedit molestias aliquid sequi sed! Laborum provident fugiat voluptas libero ex officiis itaque.
+              </p>
+            </div>
+
+            <div class="col-md-4">
+              <img src="./lib/imagens/casamentos.png" alt="Casamentos" class="d-block w-100 rounded mb-2">
+              <h3 class="section-title text-colored fs-4 pt-3">
+                <i class="bi bi-arrow-through-heart-fill"></i>
+                Recepção para casamento</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, animi aspernatur modi dicta quo tempora eveniet voluptatem impedit molestias aliquid sequi sed! Laborum provident fugiat voluptas libero ex officiis itaque.
+              </p>
+            </div>
+
+            <div class="col-md-4">
+              <img src="./lib/imagens/confraternizacoes.png" alt="Confraternizações" class="d-block w-100 rounded mb-2">
+              <h3 class="section-title text-colored fs-4 pt-3">
+                <i class="bi bi-people-fill"></i>
+                Confraternizações</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, animi aspernatur modi dicta quo tempora eveniet voluptatem impedit molestias aliquid sequi sed! Laborum provident fugiat voluptas libero ex officiis itaque.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Sessão Nosso Cardápio-->
+      <section id="cardapio">
+        <div class="container">
+          <div class="row">
+            <h2 class="section-title text-center">Nosso <span class="text-colored">cardápio</span></h2>
+          </div>
+          <div class="row">
+            <aside class="col-md-2">
+              <nav class="nav nav-pills flex-column nav-cardapio">
+                <button type="button" class=" fw-bold text-start nav-link text-colored active btn">Bebidas não alcoólicas</button>
+                <button type="button" class=" fw-bold text-start nav-link text-colored">Bebidas alcoólicas</button>
+                <button type="button" class=" fw-bold text-start nav-link text-colored">Entradas</button>
+                <button type="button" class=" fw-bold text-start nav-link text-colored">Pratos principais</button>
+                <button type="button" class=" fw-bold text-start nav-link text-colored">Sobremesas</button>
+              </nav>
+            </aside>
+
+            <div class="col-md-10">
+              <div class="tab-content">
+                <div class="tab-pane active">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <img class="coke d-block w-100" src="./lib/imagens/coke.png" alt="Coca-Cola">
+                      <h5 class="text-colored fw-bold mt-2">Coca-Cola</h5>
+                      <p id="text-bebidas">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam officiis, distinctio laboriosam qui quasi sapiente praesentium?
+                      </p>
+                    </div>
+
+                    <div class="col-md-3">
+                      <img class="sucos d-block w-100" src="./lib/imagens/suco.png" alt="Sucos">
+                      <h5 class="text-colored fw-bold mt-2">Sucos</h5>
+                      <p id="text-bebidas">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam officiis, distinctio laboriosam qui quasi sapiente praesentium?
+                      </p>
+                    </div>
+
+                    <div class="col-md-3">
+                      <img class="sucos d-block w-100" src="./lib/imagens/suco.png" alt="Sucos">
+                      <h5 class="text-colored fw-bold mt-2">Sucos</h5>
+                      <p id="text-bebidas">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam officiis, distinctio laboriosam qui quasi sapiente praesentium?
+                      </p>
+                    </div>
+
+                    <div class="col-md-3">
+                      <img class="sucos d-block w-100" src="./lib/imagens/suco.png" alt="Sucos">
+                      <h5 class="text-colored fw-bold mt-2">Sucos</h5>
+                      <p id="text-bebidas">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam officiis, distinctio laboriosam qui quasi sapiente praesentium?
+                      </p>
+                    </div>
+
+                    <div class="col-md-3">
+                      <img class="sucos d-block w-100" src="./lib/imagens/suco.png" alt="Sucos">
+                      <h5 class="text-colored fw-bold mt-2">Sucos</h5>
+                      <p id="text-bebidas">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam officiis, distinctio laboriosam qui quasi sapiente praesentium?
+                      </p>
+                    </div>
+
+                    <div class="col-md-3">
+                      <img class="sucos d-block w-100" src="./lib/imagens/suco.png" alt="Sucos">
+                      <h5 class="text-colored fw-bold mt-2">Sucos</h5>
+                      <p id="text-bebidas">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam officiis, distinctio laboriosam qui quasi sapiente praesentium?
+                      </p>
+                    </div>
+
+                    <div class="col-md-3">
+                      <img class="sucos d-block w-100" src="./lib/imagens/suco.png" alt="Sucos">
+                      <h5 class="text-colored fw-bold mt-2">Sucos</h5>
+                      <p id="text-bebidas">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam officiis, distinctio laboriosam qui quasi sapiente praesentium?
+                      </p>
+                    </div>
+
+                    <div class="col-md-3">
+                      <img class="sucos d-block w-100" src="./lib/imagens/suco.png" alt="Sucos">
+                      <h5 class="text-colored fw-bold mt-2">Sucos</h5>
+                      <p id="text-bebidas">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam officiis, distinctio laboriosam qui quasi sapiente praesentium?
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
     
     <script src="./lib/bootstrap.bundle.min.js"></script>
     <script src="./main.js"></script>
