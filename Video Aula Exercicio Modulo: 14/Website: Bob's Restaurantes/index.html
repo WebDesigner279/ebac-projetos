@@ -31,7 +31,7 @@
               </a>
             </li>
             <li class="nav-item fw-bold">
-              <a href="#" class="nav-link"><i class="bi bi-card-text me-2"></i>Nosso cardápio</a>
+              <a href="#cardapio" class="nav-link"><i class="bi bi-card-text me-2"></i>Nosso cardápio</a>
             </li>
             <li class="nav-item fw-bold">
               <a href="#" class="nav-link"><i class="bi bi-chat-left-text me-2"></i>Fale concosco</a>
@@ -119,7 +119,7 @@
         </div>
       </section>
       <!--Sessão Sobre Eventos-->
-      <section id="eventos" class="pt-3 pb-3">
+      <section id="eventos">
         <div class="container">
           <div class="row mt-4">
             <h2 class="section-title text-center">Para todas <span class="text-colored">as ocasiões</span></h2>
@@ -159,7 +159,7 @@
         </div>
       </section>
       <!--Sessão Nosso Cardápio-->
-      <section id="cardapio">
+      <section id="cardapio" class="pt-5 pb-5">
         <div class="container">
           <div class="row">
             <h2 class="section-title text-center">Nosso <span class="text-colored">cardápio</span></h2>
@@ -167,17 +167,18 @@
           <div class="row">
             <aside class="col-md-2">
               <nav class="nav nav-pills flex-column nav-cardapio">
-                <button type="button" class=" fw-bold text-start nav-link text-colored active btn">Bebidas não alcoólicas</button>
-                <button type="button" class=" fw-bold text-start nav-link text-colored">Bebidas alcoólicas</button>
-                <button type="button" class=" fw-bold text-start nav-link text-colored">Entradas</button>
-                <button type="button" class=" fw-bold text-start nav-link text-colored">Pratos principais</button>
-                <button type="button" class=" fw-bold text-start nav-link text-colored">Sobremesas</button>
+                <button type="button" data-bs-toggle="tab" data-bs-target="#bebidas-sem-alcool" class=" fw-bold text-start nav-link text-colored active">Bebidas não alcoólicas</button>
+                <button type="button" data-bs-toggle="tab" data-bs-target="#bebidas-alcoolicas" class=" fw-bold text-start nav-link text-colored">Bebidas alcoólicas</button>
+                <button type="button" data-bs-toggle="tab" data-bs-target="#entradas" class=" fw-bold text-start nav-link text-colored">Entradas</button>
+                <button type="button" data-bs-toggle="tab" data-bs-target="#pratos-principais" class=" fw-bold text-start nav-link text-colored">Pratos principais</button>
+                <button type="button" data-bs-toggle="tab" data-bs-target="#sobremesas" class=" fw-bold text-start nav-link text-colored">Sobremesas</button>
               </nav>
             </aside>
 
+                    <!--Bebidas Sem Alcool-->
             <div class="col-md-10">
               <div class="tab-content">
-                <div class="tab-pane active">
+                <div class="tab-pane active" id="bebidas-sem-alcool">
                   <div class="row">
                     <div class="col-md-3">
                       <img class="coke d-block w-100" src="./lib/imagens/coke.png" alt="Coca-Cola">
@@ -188,7 +189,7 @@
                     </div>
 
                     <div class="col-md-3">
-                      <img class="sucos d-block w-100" src="./lib/imagens/suco.png" alt="Sucos">
+                      <img class="sucos d-block w-100" src="./lib/imagens/suco-1.png" alt="Sucos">
                       <h5 class="text-colored fw-bold mt-2">Sucos</h5>
                       <p id="text-bebidas">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam officiis, distinctio laboriosam qui quasi sapiente praesentium?
@@ -196,7 +197,7 @@
                     </div>
 
                     <div class="col-md-3">
-                      <img class="sucos d-block w-100" src="./lib/imagens/suco.png" alt="Sucos">
+                      <img class="sucos d-block w-100" src="./lib/imagens/suco-3.png" alt="Sucos">
                       <h5 class="text-colored fw-bold mt-2">Sucos</h5>
                       <p id="text-bebidas">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam officiis, distinctio laboriosam qui quasi sapiente praesentium?
@@ -204,40 +205,158 @@
                     </div>
 
                     <div class="col-md-3">
-                      <img class="sucos d-block w-100" src="./lib/imagens/suco.png" alt="Sucos">
+                      <img class="sucos d-block w-100" src="./lib/imagens/suco-4.png" alt="Sucos">
                       <h5 class="text-colored fw-bold mt-2">Sucos</h5>
+                      <p id="text-bebidas">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam officiis, distinctio laboriosam qui quasi sapiente praesentium?
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="container">
+                  
+                </div>
+                <!--Bebidas Alcoolicas-->
+                <div class="tab-pane" id="bebidas-alcoolicas">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <img class="coke d-block w-100" src="./lib/imagens/cerveja.png" alt="Cerveja">
+                      <h5 class="text-colored fw-bold mt-2">Cerveja</h5>
                       <p id="text-bebidas">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam officiis, distinctio laboriosam qui quasi sapiente praesentium?
                       </p>
                     </div>
 
                     <div class="col-md-3">
-                      <img class="sucos d-block w-100" src="./lib/imagens/suco.png" alt="Sucos">
-                      <h5 class="text-colored fw-bold mt-2">Sucos</h5>
+                      <img class="sucos d-block w-100" src="./lib/imagens/vinho.png" alt="Vinho">
+                      <h5 class="text-colored fw-bold mt-2">Vinho</h5>
                       <p id="text-bebidas">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam officiis, distinctio laboriosam qui quasi sapiente praesentium?
                       </p>
                     </div>
 
                     <div class="col-md-3">
-                      <img class="sucos d-block w-100" src="./lib/imagens/suco.png" alt="Sucos">
-                      <h5 class="text-colored fw-bold mt-2">Sucos</h5>
+                      <img class="sucos d-block w-100" src="./lib/imagens/shampagne.png" alt="Shampagne">
+                      <h5 class="text-colored fw-bold mt-2">Shampagne</h5>
                       <p id="text-bebidas">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam officiis, distinctio laboriosam qui quasi sapiente praesentium?
                       </p>
                     </div>
 
                     <div class="col-md-3">
-                      <img class="sucos d-block w-100" src="./lib/imagens/suco.png" alt="Sucos">
-                      <h5 class="text-colored fw-bold mt-2">Sucos</h5>
+                      <img class="sucos d-block w-100" src="./lib/imagens/licor.png" alt="Licor">
+                      <h5 class="text-colored fw-bold mt-2">Licor</h5>
+                      <p id="text-bebidas">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam officiis, distinctio laboriosam qui quasi sapiente praesentium?
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!--Entradas-->
+                <div class="tab-pane" id="entradas">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <img class="coke d-block w-100" src="./lib/imagens/entrada-1.png" alt="Nome">
+                      <h5 class="text-colored fw-bold mt-2">Entrada-1</h5>
                       <p id="text-bebidas">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam officiis, distinctio laboriosam qui quasi sapiente praesentium?
                       </p>
                     </div>
 
                     <div class="col-md-3">
-                      <img class="sucos d-block w-100" src="./lib/imagens/suco.png" alt="Sucos">
-                      <h5 class="text-colored fw-bold mt-2">Sucos</h5>
+                      <img class="sucos d-block w-100" src="./lib/imagens/entrada-2.png" alt="Nome">
+                      <h5 class="text-colored fw-bold mt-2">Entrada-2</h5>
+                      <p id="text-bebidas">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam officiis, distinctio laboriosam qui quasi sapiente praesentium?
+                      </p>
+                    </div>
+
+                    <div class="col-md-3">
+                      <img class="sucos d-block w-100" src="./lib/imagens/entrada-3.png" alt="Nome">
+                      <h5 class="text-colored fw-bold mt-2">Entrada-3</h5>
+                      <p id="text-bebidas">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam officiis, distinctio laboriosam qui quasi sapiente praesentium?
+                      </p>
+                    </div>
+
+                    <div class="col-md-3">
+                      <img class="sucos d-block w-100" src="./lib/imagens/entrada-4.png" alt="Nome">
+                      <h5 class="text-colored fw-bold mt-2">Entrada-4</h5>
+                      <p id="text-bebidas">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam officiis, distinctio laboriosam qui quasi sapiente praesentium?
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!--Pratos Principais-->
+                <div class="tab-pane" id="pratos-principais">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <img class="coke d-block w-100" src="./lib/imagens/prato-1.png" alt="Nome">
+                      <h5 class="text-colored fw-bold mt-2">Prato-1</h5>
+                      <p id="text-bebidas">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam officiis, distinctio laboriosam qui quasi sapiente praesentium?
+                      </p>
+                    </div>
+
+                    <div class="col-md-3">
+                      <img class="sucos d-block w-100" src="./lib/imagens/prato-2.png" alt="Nome">
+                      <h5 class="text-colored fw-bold mt-2">Prato-2</h5>
+                      <p id="text-bebidas">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam officiis, distinctio laboriosam qui quasi sapiente praesentium?
+                      </p>
+                    </div>
+
+                    <div class="col-md-3">
+                      <img class="sucos d-block w-100" src="./lib/imagens/prato-3.png" alt="Nome">
+                      <h5 class="text-colored fw-bold mt-2">Prato-3</h5>
+                      <p id="text-bebidas">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam officiis, distinctio laboriosam qui quasi sapiente praesentium?
+                      </p>
+                    </div>
+
+                    <div class="col-md-3">
+                      <img class="sucos d-block w-100" src="./lib/imagens/prato-4.png" alt="Nome">
+                      <h5 class="text-colored fw-bold mt-2">Prato-4</h5>
+                      <p id="text-bebidas">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam officiis, distinctio laboriosam qui quasi sapiente praesentium?
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!--Sobremesas-->
+                <div class="tab-pane" id="sobremesas">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <img class="coke d-block w-100" src="./lib/imagens/sobremesa-1.png" alt="Nome">
+                      <h5 class="text-colored fw-bold mt-2">Sobremesa-1</h5>
+                      <p id="text-bebidas">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam officiis, distinctio laboriosam qui quasi sapiente praesentium?
+                      </p>
+                    </div>
+
+                    <div class="col-md-3">
+                      <img class="sucos d-block w-100" src="./lib/imagens/sobremesa-2.png" alt="Nome">
+                      <h5 class="text-colored fw-bold mt-2">Sobremesa-2</h5>
+                      <p id="text-bebidas">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam officiis, distinctio laboriosam qui quasi sapiente praesentium?
+                      </p>
+                    </div>
+
+                    <div class="col-md-3">
+                      <img class="sucos d-block w-100" src="./lib/imagens/sobremesa-3.png" alt="Nome">
+                      <h5 class="text-colored fw-bold mt-2">Sobremesa-3</h5>
+                      <p id="text-bebidas">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam officiis, distinctio laboriosam qui quasi sapiente praesentium?
+                      </p>
+                    </div>
+
+                    <div class="col-md-3">
+                      <img class="sucos d-block w-100" src="./lib/imagens/sobremesa-4.png" alt="Nome">
+                      <h5 class="text-colored fw-bold mt-2">Sobremesa-4</h5>
                       <p id="text-bebidas">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam officiis, distinctio laboriosam qui quasi sapiente praesentium?
                       </p>
@@ -248,9 +367,47 @@
             </div>
           </div>
         </div>
+      </div>
       </section>
-    </div>
+
+      <!--Fale conosco-->
+      <section id="fale-conosco">
+          <div class="container">
+            <div class="row">
+              <h2 class="section-title text-center">
+                Fale <span class="text-colored">conosco</span></h2>
+            </div>
+
+          <div class="row">
+            <div class="col-md-7">
+              <form>
+                <div>
+                  <label for="nome" class="form-label">Seu nome</label>
+                  <input type="text" id="nome" class="form-control" required>
+                </div>
     
+                <div>
+                  <label for="email" class="form-label">Seu e-mail</label>
+                  <input type="email" id="email" class="form-control" required>
+                </div>
+    
+                <div>
+                  <label for="telefone" class="form-label">Seu telefone (opcional)</label>
+                  <input type="tel" id="telefone" class="form-control">
+                </div>
+    
+                <div>
+                  <label for="mensagem" class="form-label">Sua mensagem</label>
+                  <textarea class="form-control" id="mensagem" required></textarea>            
+                </div>
+    
+                <button type="submit" class="btn">Enviar</button>
+              </form>
+            </div>
+          </div>
+        </section>
+        </div>
+
     <script src="./lib/bootstrap.bundle.min.js"></script>
     <script src="./main.js"></script>
   </body>

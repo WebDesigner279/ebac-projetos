@@ -37,8 +37,9 @@ img {
   font-family: Pacifico, cursive;
 }
 
-#sobre-o-restaurante {
+#sobre-o-restaurante, #cardapio {
   background-color: #c44e342a;
+  margin-top: 40px;
 }
 
 .text-colored {
@@ -55,17 +56,34 @@ img {
   color: #c44e34;
 }
 
-.coke, .sucos, h5, p {
+#bebidas-sem-alcool, #bebidas-alcoolicas, #entradas, #pratos-principais, #sobremesas {
   border-radius: 8px;
   margin-top: 16px;
+  margin-left: 16px;
+}
+
+#eventos, #fale-conosco {
+  padding-top: 50px;
+}
+
+body {
+  margin-bottom: 200;
+}
+
+.tab-pane img {
+  border-radius: 8px;
+}
+
+.tab-pane {
+  margin-right: 16px;
 }
 
 #text-bebidas {
   margin-top: 8px;
 }
 
-.btn {
-  margin-right: 8px;
+#fale-conosco {
+  padding-bottom: 32px;
 }
 
 
