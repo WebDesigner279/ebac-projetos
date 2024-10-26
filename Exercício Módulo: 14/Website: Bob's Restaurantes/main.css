@@ -1,0 +1,126 @@
+body {
+  font-family: Roboto, sans-serif;
+}
+
+.navbar {
+  background-color: #c44e34;
+}
+
+#cabecalho .nav .nav-link.active {
+  background-color: #fff;
+  color: #c44e34; /* cor um pouco mais escura */
+}
+
+#cabecalho .nav .nav-link, .navbar-brand, .navbar-brand:hover, .nav-cardapio .nav-link.active:hover {
+  color: #fff;
+}
+
+.navbar-toggler {
+  background-color: #ffeae6;
+}
+
+ul {
+  margin-top: 8px;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.section-title {
+  font-family: Pacifico, cursive;
+}
+
+#sobre-o-restaurante, #cardapio {
+  background-color: #c44e342a;
+}
+
+.text-colored {
+  color: #c44e34;
+}
+
+.nav-cardapio .nav-link.active, #contato button {
+  margin-top: 16px;
+  background-color: #c44e34;
+  color: #fff;
+}
+
+#contato button {
+  background-color: #c44e34;
+  color: #fff;
+  font-weight: bold;
+}
+
+#contato button:hover {
+  background-color: #fff;
+  border-color: #c44e34;
+  color: #c44e34;
+}
+
+.nav-cardapio .nav-link:hover {
+  color: #c44e34;
+}
+
+#bebidas-sem-alcool, #bebidas-alcoolicas, #entradas, #pratos-principais, #sobremesas {
+  border-radius: 8px;
+  margin-top: 16px;
+  margin-left: 16px;
+}
+
+#contato {
+  padding-top: 50px;
+  margin-bottom: 64px;
+
+}
+
+#eventos {
+  padding-top: 40px;
+  margin-bottom: 32px;
+}
+
+
+body {
+  margin-bottom: 200;
+}
+
+.tab-pane img {
+  border-radius: 8px;
+}
+
+.tab-pane {
+  margin-right: 16px;
+}
+
+#text-bebidas {
+  margin-top: 8px;
+}
+
+#contato {
+}
+
+.social-links li {
+  list-style: none;
+  display: inline;
+}
+
+.social-links a {
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 8px;
+  background-color: #c44e34;
+  color: #fff;
+}
+
+
+
+
+
