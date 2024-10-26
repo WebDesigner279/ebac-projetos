@@ -39,17 +39,28 @@ img {
 
 #sobre-o-restaurante, #cardapio {
   background-color: #c44e342a;
-  margin-top: 40px;
 }
 
 .text-colored {
   color: #c44e34;
 }
 
-.nav-cardapio .nav-link.active {
+.nav-cardapio .nav-link.active, #contato button {
   margin-top: 16px;
   background-color: #c44e34;
   color: #fff;
+}
+
+#contato button {
+  background-color: #c44e34;
+  color: #fff;
+  font-weight: bold;
+}
+
+#contato button:hover {
+  background-color: #fff;
+  border-color: #c44e34;
+  color: #c44e34;
 }
 
 .nav-cardapio .nav-link:hover {
@@ -62,9 +73,17 @@ img {
   margin-left: 16px;
 }
 
-#eventos, #fale-conosco {
+#contato {
   padding-top: 50px;
+  margin-bottom: 64px;
+
 }
+
+#eventos {
+  padding-top: 40px;
+  margin-bottom: 32px;
+}
+
 
 body {
   margin-bottom: 200;
@@ -82,9 +101,27 @@ body {
   margin-top: 8px;
 }
 
-#fale-conosco {
+#contato {
   padding-bottom: 32px;
 }
+
+.social-links li {
+  list-style: none;
+  display: inline;
+}
+
+.social-links a {
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 8px;
+  background-color: #c44e34;
+  color: #fff;
+}
+
+
 
 
 

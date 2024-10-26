@@ -23,7 +23,8 @@
           <ul class="nav nav-pills d-block d-md-flex">
             <li class="nav-item fw-bold">
               <a href="#sobre-o-restaurante" class="nav-link">
-                <i class="bi bi-house-door me-2"></i>Sobre o restaurante</a>
+                <i class="bi bi-house-door me-2"></i>Sobre o restaurante
+              </a>
             </li>
             <li class="nav-item fw-bold">
               <a href="#eventos" class="nav-link">
@@ -31,18 +32,22 @@
               </a>
             </li>
             <li class="nav-item fw-bold">
-              <a href="#cardapio" class="nav-link"><i class="bi bi-card-text me-2"></i>Nosso cardápio</a>
+              <a href="#cardapio" class="nav-link">
+                <i class="bi bi-card-text me-2"></i>Nosso cardápio
+              </a>
             </li>
             <li class="nav-item fw-bold">
-              <a href="#" class="nav-link"><i class="bi bi-chat-left-text me-2"></i>Fale concosco</a>
-            </li>
+              <a href="#contato" class="nav-link">
+                  <i class="bi bi-chat-left-text me-2"></i>Contato
+              </a>
+          </li>
           </ul>
         </nav>
       </div>
     </header>
     <!--Fim Navbar-->
 
-    <div data-bs-spy="scroll" data-bs-target="cabecalho">
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true">
       <!--Sessão Sobre o Restaurante-->
         <section id="sobre-o-restaurante">
           <div id="carousel" class="carousel slide" data-bs-ride="carousel">
@@ -368,45 +373,94 @@
           </div>
         </div>
       </div>
-      </section>
+    </section>
 
-      <!--Fale conosco-->
-      <section id="fale-conosco">
+        <!--contato-->
+        <section id="contato">
           <div class="container">
             <div class="row">
-              <h2 class="section-title text-center">
-                Fale <span class="text-colored">conosco</span></h2>
+              <h2 class="section-title text-center mb-5">
+                Fale <span class="text-colored">
+                  conosco
+                </span>
+              </h2>
             </div>
 
-          <div class="row">
-            <div class="col-md-7">
-              <form>
-                <div>
-                  <label for="nome" class="form-label">Seu nome</label>
-                  <input type="text" id="nome" class="form-control" required>
+            <div class="row">
+              <div class="col-md-7">
+                <form>
+                  <div class="mb-3">
+                    <label for="nome" class="form-label fw-bold text-colored">Seu nome</label>
+                    <input type="text" id="nome" class="form-control" required>
+                  </div>
+      
+                  <div class="mb-3">
+                    <label for="email" class="form-label fw-bold text-colored">Seu e-mail</label>
+                    <input type="email" id="email" class="form-control" required>
+                  </div>
+      
+                  <div class="mb-3">
+                    <label for="telefone" class="form-label fw-bold text-colored">Seu telefone (opcional)</label>
+                    <input type="tel" id="telefone" class="form-control">
+                  </div>
+      
+                  <div class="mb-3">
+                    <label for="mensagem" class="form-label fw-bold text-colored">Sua mensagem</label>
+                    <textarea class="form-control" id="mensagem" required></textarea>            
+                  </div>
+      
+                  <button type="submit" class="btn fw-bold mb-5">Enviar</button>
+                </form>
+              </div>
+
+              <!--Redes sociais-->
+              <div class="col-md-5">
+                <div class="row">
+                  <h3 class="section-title fs-4 text-colored">
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    Redes sociais
+                  </h3>
+                  <ul class="social-links">
+                    <li class="fs-5">
+                      <a href="#">
+                        <i class="bi bi-facebook text-colored">
+                        </i>
+                      </a>
+                    </li>
+
+                    <li class="fs-5 ms-1 me-1">
+                      <a href="#">
+                        <i class="bi bi-instagram text-colored">
+                        </i>
+                      </a>
+                    </li>
+
+                    <li class="fs-5">
+                      <a href="#">
+                        <i class="bi bi-whatsapp text-colored">
+                        </i>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
-    
-                <div>
-                  <label for="email" class="form-label">Seu e-mail</label>
-                  <input type="email" id="email" class="form-control" required>
+
+                <div class="row mt-4">
+                  <h3 class="section-title fs-4 text-colored">
+                    <i class="bi bi-cursor-fill"></i>
+                    Endereço
+                  </h3>
+                  <p>
+                    Endereço: Rua Bob's Restaurantes, n°: 2024, Bairro: Bob's Restaurantes - São Paulo - SP.
+                  </p>
                 </div>
-    
-                <div>
-                  <label for="telefone" class="form-label">Seu telefone (opcional)</label>
-                  <input type="tel" id="telefone" class="form-control">
-                </div>
-    
-                <div>
-                  <label for="mensagem" class="form-label">Sua mensagem</label>
-                  <textarea class="form-control" id="mensagem" required></textarea>            
-                </div>
-    
-                <button type="submit" class="btn">Enviar</button>
-              </form>
-            </div>
+              </div>
           </div>
         </section>
-        </div>
+      </div>
+
+      <footer>
+        <p class="pt-4">© 2024 Bob's Restaurantes. Todos os direitos reservados.</p>
+      </footer>
 
     <script src="./lib/bootstrap.bundle.min.js"></script>
     <script src="./main.js"></script>
