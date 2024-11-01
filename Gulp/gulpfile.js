@@ -1,19 +1,25 @@
 // Importação do pacote Gulp
 const gulp = require('gulp');
 
+// Importação do pacote Uglify
+const uglify = require('gulp-uglify');
+
 // Importação do Gulp e SASS
 const sass = require('gulp-sass')(require('sass'));
 
 // Importação do sourcemaps
 const sourcemaps = require('gulp-sourcemaps');
 
-// Importação do pacote Uglify
-const uglify = require('gulp-uglify');
+// Importação do plugin obfuscate
+const obfuscate = require('gulp-obfuscate');
+
+
 
 // Função para comprimir JavaScript
 function comprimeJavaScript() {
   return gulp.src('./source/scripts/*.js')
     .pipe(uglify())
+    .pipe(obfuscate())
     .pipe(uglify.dest('./build/scripts'))
 }
 

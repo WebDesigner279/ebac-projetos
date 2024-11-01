@@ -74,13 +74,13 @@ img {
 }
 
 #contato {
-  padding-top: 50px;
+  padding-top: 20px;
   margin-bottom: 64px;
 
 }
 
-#eventos {
-  padding-top: 40px;
+#eventos, #cardapio {
+  padding-top: 20px;
   margin-bottom: 32px;
 }
 
@@ -101,9 +101,6 @@ body {
   margin-top: 8px;
 }
 
-#contato {
-}
-
 .social-links li {
   list-style: none;
   display: inline;
@@ -118,6 +115,7 @@ footer {
   padding: 8px;
   background-color: #c44e34;
   color: #fff;
+  
 }
 
 
