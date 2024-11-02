@@ -13,7 +13,15 @@ const sourcemaps = require('gulp-sourcemaps');
 // Importação do plugin obfuscate
 const obfuscate = require('gulp-obfuscate');
 
+// Importação do plugin imagemin
+const imagemin = require('gulp-imagemin');
 
+// Função para comprimir imagem
+function comprimeImagens() {
+  return gulp.src('./source/images/*')
+      .pipe(imagemin())
+      .pipe(gulp.dest('./build/images'));
+}
 
 // Função para comprimir JavaScript
 function comprimeJavaScript() {
@@ -32,33 +40,10 @@ function compilaSass() {
     .pipe(gulp.dest('./build/styles'));
 }
 
-// Função para tarefas em série
-function funcaoPadrao(callback) {
-  setTimeout(function() {
-    console.log("Executando via Gulp");
-    callback();
-  }, 2000);
-}
-
-// Função pública `dizOi` com chamada à função `dizTchau`
-function dizOi(callback) {
-  console.log("Olá Gulp");
-  dizTchau();
-  callback();
-}
-
-// Função privada `dizTchau`
-function dizTchau() {
-  console.log("Tchau Gulp");
-}
-
-// Exportação das tarefas
-exports.default = gulp.series(funcaoPadrao, dizOi, compilaSass); // Opção em série
-exports.dizOi = dizOi;
-exports.sass = compilaSass;
-// Compilação inifita do gulp
-/*exports.watch = function() {
+// Função de tarefa publica
+exports.default = function() {
   gulp.watch('./source/style/*.scss', { ignoreInitial: false }, gulp.series(compilaSass));
-}*/
+  gulp.watch('./source/scripts/*.js', { ignoreInitial: false }, gulp.series(comprimeJavaScript));
+  gulp.watch('./source/images/*', { ignoreInitial: false }, gulp.series(comprimeImagens));
+}
 
-exports.javascript = comprimeJavaScript;
