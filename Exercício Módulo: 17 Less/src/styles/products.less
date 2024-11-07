@@ -1,0 +1,37 @@
+@import 'variables.less';
+@import 'mixins.less';
+
+section {
+  background-color: @background-color;
+  padding: 50px 0;
+
+  h2 {
+    font-family: @font-family;
+    color: @primary-color;
+    text-align: center;
+  }
+
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+
+    .product-item {
+      background: white;
+      border: 1px solid @secondary-color;
+      padding: 20px;
+      width: 180px;
+      text-align: center;
+
+      h4 {
+        font-size: 1.2em;
+        color: @secondary-color;
+      }
+
+      .product-button {
+        .button-style(@primary-color);
+      }
+    }
+  }
+}
