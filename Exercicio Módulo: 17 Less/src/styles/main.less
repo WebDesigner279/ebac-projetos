@@ -1,0 +1,48 @@
+// Imports de arquivos LESS
+@import 'variables.less';
+//@import 'mixins.less';
+@import 'header.less';
+@import 'products.less';
+@breakpointMobile: ~"(max-width: 767px)"; // Aplicando o escapings processo de utilização de carateres especiais como @, #, {, }
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none; /* Remove os bullets */
+}
+
+.logo-pets {
+  width: 120px;
+  height: 70px;
+}
+
+.py-5 {
+  background-color: @corDeFundoSessaoProdutos;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 10px auto;
+}
+
+.social-links li img {
+  transition: all 0.3s ease;
+  width: 30px;
+  filter: brightness(0) invert(1); /* Torna o ícone branco */
+}
+
+.social-links li img:hover {
+  transform: scale(1.3);
+}
+
+
+
